@@ -1,18 +1,87 @@
+</script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  $("button").addClass("animated bounce");
-    
-}
+  $(document).ready(function() {
 
-);
+    $("#0").hide();
+    $("#1").hide();
+    $("#2").hide();
+    $("#gm").hide();
+    $("#3").hide();
+    $("#4").hide();
+    $("#5").hide();
+    $("#target0").click(function(){
+    $("#0").toggle();
+    $("#1").hide();
+    $("#2").hide();
+    $("#gm").hide();
+    $("#3").hide();
+    $("#4").hide();
+    $("#5").hide();
+    });
+
+    $("#target1").click(function(){
+    $("#1").toggle();
+    $("#0").hide();
+    $("#2").hide();
+    $("#gm").hide();
+    $("#3").hide();
+    $("#4").hide();
+    $("#5").hide();
+    });
+
+    $("#target2").click(function(){
+    $("#2").toggle();
+    $("#0").hide();
+    $("#1").hide();
+    $("#gm").hide();
+    $("#3").hide();
+    $("#4").hide();
+    $("#5").hide();
+    });
+    $("#targetGM").click(function(){
+    $("#gm").toggle();
+    $("#0").hide();
+    $("#1").hide();
+    $("#2").hide();
+    $("#3").hide();
+    $("#4").hide();
+    $("#5").hide();
+    });
+    $("#target3").click(function(){
+    $("#3").toggle();
+    $("#0").hide();
+    $("#1").hide();
+    $("#2").hide();
+    $("#gm").hide();
+    $("#4").hide();
+    $("#5").hide();
+    });
+    $("#target4").click(function(){
+    $("#4").toggle();
+    $("#0").hide();
+    $("#1").hide();
+    $("#2").hide();
+    $("#gm").hide();
+    $("#3").hide();
+    $("#5").hide();
+    });
+    $("#target5").click(function(){
+    $("#5").toggle();
+    $("#0").hide();
+    $("#1").hide();
+    $("#2").hide();
+    $("#gm").hide();
+    $("#3").hide();
+    $("#4").hide();
+    });
+  });
 </script>
-
 <style>
     h1 {
       color: red;
     }
     h2 {
-      color: rgb(0, 222, 252);
+      color: rgb(0, 255, 242);
     }
     .fixed-image {
     width: 500px;
@@ -24,22 +93,27 @@ $(document).ready(function(){
  background-position: center;
  background-attachment:local;
  background-size: cover;
- background-color: #cccccc;
-
 }
 
   </style>
 
 <h1>WEB基本原理技術for using JQuery</h1>
 <h2>408570021 醫資二 蔡沂珈</h2>
-<div class="well" id="left-well">
-  <button class="btn btn-default target" id="target1">雪山風景照</button>
-  <button class="btn btn-default target" id="target2">河邊風景照</button>
-  <button class="btn btn-default target" id="target3">城堡風景照</button>
-  <button class="btn btn-default target" id="target4">山腰風景照</button>
-  <button class="btn btn-default target" id="target5">水邊小鎮風景照</button>
-  <button class="btn btn-default target" id="target6">小鎮風景照</button>
+<div class="col text-center">
+<div class="row">
+<button class="btn btn-default" id="target0"><span style="font-size:20px;">#雪山風景</span></button>
+<button class="btn btn-default" id="target1"><span style="font-size:20px;">#河邊小鎮風景</span></button>
+<button class="btn btn-default" id="target2"><span style="font-size:20px;">#城堡風景</span></button>
+<button class="btn btn-default" id="target3"><span style="font-size:20px;">#山腰風景</span></button>
+<button class="btn btn-default" id="target4"><span style="font-size:20px;">#草原風景</span></button>
+<button class="btn btn-default" id="target5"><span style="font-size:20px;">#古蹟風景</span></button>
 
 </div>
 
-<!--<img class="fixed-image" src="https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/123830727_2687477234839935_1762980326721421107_n.jpg?_nc_cat=104&ccb=2&_nc_sid=ae9488&_nc_ohc=XZl9XkUBh5kAX-py5S8&_nc_ht=scontent.ftpe3-1.fna&tp=7&oh=c1ff1231495f3c52da75ebd5b2e5468c&oe=5FCC2430" alt ="雪山風景照"/>
+<div class="row">
+<div id="0"><img  src="https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/123830727_2687477234839935_1762980326721421107_n.jpg?_nc_cat=104&ccb=2&_nc_sid=ae9488&_nc_ohc=XZl9XkUBh5kAX-py5S8&_nc_ht=scontent.ftpe3-1.fna&tp=7&oh=c1ff1231495f3c52da75ebd5b2e5468c&oe=5FCC2430" width="500" heigh="300"></div>
+<img id="1" src="https://scontent.ftpe3-2.fna.fbcdn.net/v/t1.15752-9/123850759_397607344608762_4945014788886714710_n.jpg?_nc_cat=108&ccb=2&_nc_sid=ae9488&_nc_ohc=NCe-vCcphwkAX-HgsSl&_nc_ht=scontent.ftpe3-2.fna&oh=06cd1acd7aa352983e49d96eb0099abb&oe=5FCBD7DE" width="500" heigh="300">
+<img id="2" src="https://scontent.ftpe3-2.fna.fbcdn.net/v/t1.15752-9/123848413_3056949064406062_678992381647865973_n.jpg?_nc_cat=102&ccb=2&_nc_sid=ae9488&_nc_ohc=pBTKKH4DmLIAX_Ay_nN&_nc_ht=scontent.ftpe3-2.fna&oh=3996233935d1e786bfdadf0c3e4e022d&oe=5FCB30A9"  width="500" heigh="300">
+<img id="3" src="https://scontent.ftpe3-2.fna.fbcdn.net/v/t1.15752-9/123792964_847184179384676_4628077354878403487_n.jpg?_nc_cat=101&ccb=2&_nc_sid=ae9488&_nc_ohc=10HFYI7oceIAX8cyLPF&_nc_ht=scontent.ftpe3-2.fna&oh=bf4e5e12b0cb2e4f55a06d061f32addb&oe=5FCB52B7" width="500 heigh="300" >
+<img id="4" src="https://scontent.ftpe3-2.fna.fbcdn.net/v/t1.15752-9/123914201_412699766804295_3254225386014036124_n.jpg?_nc_cat=102&ccb=2&_nc_sid=ae9488&_nc_ohc=rTxt9OWrUHgAX_Q7w1E&_nc_ht=scontent.ftpe3-2.fna&oh=fb44ed88968269960a654bf0eb0f5409&oe=5FCCAFF5" width="500" heigh="300" >
+<img id="5" src="https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.15752-9/123842047_1056991824742830_5339666016039647556_n.jpg?_nc_cat=100&ccb=2&_nc_sid=ae9488&_nc_ohc=GqUoExUqWJwAX9GHEyX&_nc_ht=scontent.ftpe3-1.fna&oh=adbdadbf9e425b5503c19622b5f4cccc&oe=5FCDAB4D" width="500" heigh="300" >
